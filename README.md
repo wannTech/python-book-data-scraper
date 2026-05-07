@@ -1,26 +1,34 @@
-# Books to Scrape Web Scraper
+# Books Catalog Data Scraper
 
-Project Python sederhana untuk mengambil data buku dari website edukasi:
+Python web scraper that extracts structured catalog data from a multi-page e-commerce style website using BeautifulSoup, requests, and pandas.
 
-https://books.toscrape.com/
+The scraper automatically collects:
+- book title
+- price
+- rating
+- stock availability
+- product URL
 
-Website ini memang dibuat untuk latihan web scraping, sehingga cocok untuk belajar penggunaan `requests`, `BeautifulSoup`, dan `pandas`.
+and exports the data into a clean structured CSV dataset.
 
-## Fitur Project
+## Features
 
-- Scrape semua halaman katalog dengan pagination
-- Ambil book title
-- Ambil price
-- Ambil rating
-- Ambil stock availability
-- Ambil product link
-- Export hasil ke `output.csv`
+- Multi-page pagination scraping
+- Structured product data extraction
+- Automatic CSV export
 - User-Agent headers
-- Error handling sederhana saat request gagal
-- Struktur data bersih dan konsisten
-- Terminal summary jumlah data yang berhasil discrape
+- Error handling for failed requests
+- Clean and consistent dataset formatting
+- Terminal scraping summary
 
-## Struktur Project
+## Tech Stack
+
+- Python
+- requests
+- BeautifulSoup4
+- pandas
+
+## Project Structure
 
 ```text
 .
@@ -28,7 +36,6 @@ Website ini memang dibuat untuk latihan web scraping, sehingga cocok untuk belaj
 |-- requirements.txt
 |-- README.md
 `-- output.csv
-```
 
 ## Cara Install
 
